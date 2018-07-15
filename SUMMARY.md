@@ -20,6 +20,6 @@
 
 * [FlywayでDBマイグレーション](install-sts.md)
 * [MyBatis](install-sts.md)
-* [XMLでのクエリマッピング](install-sts.md)
-* [Mapperインターフェース](install-sts.md)
+    * [XMLでのクエリマッピング](install-sts.md)
+    * [Mapperインターフェース](install-sts.md)
 * [](install-sts.md)
