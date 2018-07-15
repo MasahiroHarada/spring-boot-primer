@@ -7,13 +7,12 @@
     * [Eclipseプラグイン](01-settings/eclipse-plugins.md)
     * [データベースクライアント](01-settings/database-client.md)
 
-## Hello world!
-
-* [WAFの仕組み](02-hello-world/web-application-framework.md)
-* [設定ファイル](02-hello-world/application.properties.md)
-* [コントローラー](02-hello-world/add-controller.md)
-* [テンプレート](02-hello-world/add-template.md)
-* [アプリを起動する](02-hello-world/run-application.md)
+* [Hello world!](02-hello-world/README.md)
+    * [WAFの仕組み](02-hello-world/web-application-framework.md)
+    * [設定ファイル](02-hello-world/application.properties.md)
+    * [コントローラー](02-hello-world/add-controller.md)
+    * [テンプレート](02-hello-world/add-template.md)
+    * [アプリを起動する](02-hello-world/run-application.md)
 
 ## チュートリアル
 
