@@ -9,6 +9,7 @@
 
 * [Hello world!](02-hello-world/README.md)
     * [WAFの仕組み](02-hello-world/web-application-framework.md)
+    * [プロジェクトの新規作成](02-hello-world/create-new-project.md)
     * [IDEの設定](02-hello-world/ide-settings.md)
     * [アプリケーションの設定](02-hello-world/application.properties.md)
     * [コントローラー](02-hello-world/add-controller.md)
