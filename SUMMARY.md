@@ -23,8 +23,8 @@
 * [URL設計](tutorial/url-design.md)
 * [FlywayでDBマイグレーション](tutorial/install-sts.md)
 * [MyBatis](tutorial/install-sts.md)
-    * [XMLでのクエリマッピング](tutorial/install-sts.md)
-    * [Mapperインターフェース](tutorial/install-sts.md)
+* [XMLでのクエリマッピング](tutorial/install-sts.md)
+* [Mapperインターフェース](tutorial/install-sts.md)
 * [Thymeleaf](tutorial/install-sts.md)
 * [追加画面を作成してみよう](tutorial/)
 
