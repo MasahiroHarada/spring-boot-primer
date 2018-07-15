@@ -38,20 +38,31 @@ Package Explorer の右上にある下向きの三角をクリックするとメ
 
 「環境設定」→「Java」→「Code Style」→「Formatter」→「Edit」
 
+* 「Tab policy」：「Spaces only」
+* 「Indentaion size」：4
+* 「Tab size」：4
+
 ### JavaScript
 
 「環境設定」→「JavaScript」→「Code Style」→「Formatter」→「Edit」
+
+* 「Tab policy」：「Spaces only」
+* 「Indentaion size」：2
+* 「Tab size」：2
 
 ### CSS
 
 「環境設定」→「Web」→「CSS Files」→「Editor」
 
-* 「Indent using spaces」にチェック
+* 「Indent using spaces」にチェック
 * 「Indentaion size」：2
 
 ### HTML
 
 「環境設定」→「Web」→「HTML Files」→「Editor」
+
+* 「Indent using spaces」にチェック
+* 「Indentaion size」：2
 
 ## 空白文字の表示
 
