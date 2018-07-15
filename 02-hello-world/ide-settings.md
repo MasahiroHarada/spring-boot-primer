@@ -6,6 +6,8 @@ TODO
 
 ## EditorConfig
 
+プロジェクトのルートディレクトリ（```build.gradle```）
+
 ```ini
 root = true
 
@@ -30,3 +32,7 @@ TODO
 ## Code Folding の無効化
 
 TODO
+
+## SQL ファイルの紐付け
+
+
