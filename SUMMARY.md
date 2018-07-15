@@ -18,7 +18,7 @@
 
 ## チュートリアル
 
-* [サンプルアプリの](install-sts.md)
+* [サンプルアプリの設計をしよう](install-sts.md)
 * [FlywayでDBマイグレーション](install-sts.md)
 * [MyBatis](install-sts.md)
     * [XMLでのクエリマッピング](install-sts.md)
