@@ -4,14 +4,14 @@
 
 ## 開発環境の設定
 
-* [STSをインストールする](install-sts.md)
-* [プラグインをインストールする](install-sts.md)
+* [STS](install-sts.md)
+* [Eclipseプラグイン](install-sts.md)
 * [データベースクライアント](install-sts.md)
 
 ## Hello world!
 
 * [WAFの仕組み](install-sts.md)
-* [application.properties](install-sts.md)
+* [設定ファイル](install-sts.md)
 * [コントローラー](install-sts.md)
 * [テンプレート](install-sts.md)
 * [アプリを起動する](install-sts.md)
