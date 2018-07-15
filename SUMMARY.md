@@ -6,6 +6,7 @@
 
 * [STSをインストールする](install-sts.md)
 * [プラグインをインストールする](install-sts.md)
+* [データベースクライアント](install-sts.md)
 
 ## Hello world!
 
