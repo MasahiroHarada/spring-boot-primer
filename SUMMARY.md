@@ -1,6 +1,6 @@
 # Table of content
 
-## [はじめに](README.md)
+* [はじめに](README.md)
 
 ## 開発環境の設定
 
