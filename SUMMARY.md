@@ -5,8 +5,8 @@
 ## 開発環境の設定
 
 * [STS（Spring Tool Suite）](settings/install-sts.md)
-* [Eclipseプラグイン](settings/install-sts.md)
-* [データベースクライアント](settings/install-sts.md)
+* [Eclipseプラグイン](settings/eclipse-plugins.md)
+* [データベースクライアント](settings/database-client.md)
 
 ## Hello world!
 
