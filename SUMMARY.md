@@ -33,3 +33,5 @@
 ## 演習問題
 
 * [サンプルアプリについて](practice/sample-application.md)
+* [進めかた](practice/how-to-solve.md)
+
