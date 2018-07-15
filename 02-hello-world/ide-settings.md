@@ -26,42 +26,32 @@ Package Explorer の右上にある下向きの三角をクリックするとメ
 
 「.\* resources」のチェックを**外して**「OK」をクリックします。
 
-## EditorConfig
-
-プラグインをインストールする節でも触れましたが、EditorConfig はインデントに使用する文字や幅などのコーディングルールを定義できるツールです。Eclipse だけでなく様々な IDE やエディタで利用することができます。
-
-なにが嬉しいかというと、ルールを記述した ```.editorconfig``` ファイルを共有するだけでチーム内で、しかも使うエディタがバラバラでもコーディングルールを守らせることができます。
-
-プロジェクトのルートディレクトリ（```build.gradle``` などが入っている）に、```.editorconfig``` というファイルを作成し、下記の内容を記述してください。
-
-```ini
-# プロジェクト内で最も上位のEditorConfig設定ファイル
-root = true
-
-[*]
-# 改行文字はLFに統一する
-end_of_line = lf
-# 文字コードはUTF-8
-charset = utf-8
-
-# Javaファイルはスペース4つでインデント
-[*.java]
-indent_style = space
-indent_size = 4
-
-# HTML, CSS, JSファイルはスペース2つでインデント
-[*.{html, css, js}]
-indent_style = space
-indent_size = 2
-```
-
-設定の内容はコメントに記述してある通りです。
+## インデントの設定
 
 インデントにタブ文字とスペースのどちらを使うかはプロジェクト次第かと思います。私はどちらかというとスペースが好きです。扱う文字の種類が少ない方がシンプルな気がするからです。
 
 ただ正解はないですし、どちらを使うかよりも「揃える」ことの方が重要です。どちらが好きであろうと後からプロジェクトに参画した場合は規約に従ってください。規約がない場合はコードからルールを読み取ってそちらに合わせましょう。
 
 今回は皆さんもスペースに合わせてみてください。
+
+### Java
+
+「環境設定」→「Java」→「Code Style」→「Formatter」→「Edit」
+
+### JavaScript
+
+「環境設定」→「JavaScript」→「Code Style」→「Formatter」→「Edit」
+
+### CSS
+
+「環境設定」→「Web」→「CSS Files」→「Editor」
+
+* 「Indent using spaces」にチェック
+* 「Indentaion size」：2
+
+### HTML
+
+「環境設定」→「Web」→「HTML Files」→「Editor」
 
 ## 空白文字の表示
 
