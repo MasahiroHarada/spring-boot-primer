@@ -24,14 +24,12 @@ Gradle はアプリケーションのビルドやパッケージ管理を行う�
 
 ![STS](/assets/sts-restart.png)
 
-## EditorConfig
-
-EditorConfig とは、
-
-上記「Gradle」の項と同様にインストールしてください。
-
 ## Emmet
 
 Emmet とは、
 
 上記「Gradle」の項と同様にインストールしてください。
+
+## SQL ファイルの紐付け
+
+デフォルトでは SQL ファイルを開くと別のエディタが開いてしまうので、
