@@ -10,7 +10,7 @@
 ## Hello world!
 
 * [application.properties](install-sts.md)
-* [Webアプリケーションの仕組み](install-sts.md)
+* [Webアプリの仕組み](install-sts.md)
 * [コントローラー](install-sts.md)
 * [テンプレート](install-sts.md)
 
