@@ -9,8 +9,8 @@
 
 ## Hello world!
 
-* [application.properties](install-sts.md)
 * [WAFの仕組み](install-sts.md)
+* [application.properties](install-sts.md)
 * [コントローラー](install-sts.md)
 * [テンプレート](install-sts.md)
 
