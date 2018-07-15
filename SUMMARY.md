@@ -18,17 +18,17 @@
 
 ## チュートリアル
 
-* [サンプルアプリについて](tutorial/)
+* [サンプルアプリについて](tutorial/sample-application.md)
 * [テーブル定義](tutorial/database-design.md)
 * [URL設計](tutorial/url-design.md)
-* [FlywayでDBマイグレーション](tutorial/install-sts.md)
-* [MyBatis](tutorial/install-sts.md)
-* [モデルクラス](tutorial/install-sts.md)
-* [XMLでのクエリマッピング](tutorial/install-sts.md)
-* [Mapperインターフェース](tutorial/install-sts.md)
-* [Thymeleaf](tutorial/install-sts.md)
-* [TODO](tutorial/install-sts.md)
-* [メンバー追加画面を作成してみよう](tutorial/)
+* [FlywayでDBマイグレーション](tutorial/flyway.md)
+* [MyBatis](tutorial/mybatis.md)
+* [モデルクラス](tutorial/models.md)
+* [XMLでのクエリマッピング](tutorial/xml-query-mapping.md)
+* [Mapperインターフェース](tutorial/mapper-interface.md)
+* [Thymeleaf](tutorial/thymeleaf.md)
+* [検索機能を実装しよう](tutorial/search-functionality.md)
+* [メンバー追加機能を実装してみよう](tutorial/add-member-functionality.md)
 
 ## 演習問題
 
