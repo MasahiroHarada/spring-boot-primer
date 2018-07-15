@@ -42,7 +42,5 @@ EC サイトでも SNS でもニュースサイトでも求人サイトでも、
 * JavaScript
     * Express
     * Hapi
-    * AdonisJS
-
 
 
