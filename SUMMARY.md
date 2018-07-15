@@ -2,11 +2,10 @@
 
 * [はじめに](README.md)
 
-## [開発環境の設定](01-settings/README.md)
-
-* [STS（Spring Tool Suite）](01-settings/install-sts.md)
-* [Eclipseプラグイン](01-settings/eclipse-plugins.md)
-* [データベースクライアント](01-settings/database-client.md)
+* [開発環境の設定](01-settings/README.md)
+    * [STS（Spring Tool Suite）](01-settings/install-sts.md)
+    * [Eclipseプラグイン](01-settings/eclipse-plugins.md)
+    * [データベースクライアント](01-settings/database-client.md)
 
 ## Hello world!
 
