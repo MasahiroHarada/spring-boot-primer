@@ -10,11 +10,11 @@
 
 ## Hello world!
 
-* [WAFの仕組み](hello-world/install-sts.md)
-* [設定ファイル](hello-world/install-sts.md)
-* [コントローラー](hello-world/install-sts.md)
-* [テンプレート](hello-world/install-sts.md)
-* [アプリを起動する](hello-world/install-sts.md)
+* [WAFの仕組み](hello-world/web-application-framework.md)
+* [設定ファイル](hello-world/application.properties.md)
+* [コントローラー](hello-world/add-controller.md)
+* [テンプレート](hello-world/add-template.md)
+* [アプリを起動する](hello-world/run-application.md)
 
 ## チュートリアル
 
