@@ -18,11 +18,9 @@
 
 ## チュートリアル
 
-### サンプルアプリの設計をしよう
-
-* [テーブル定義](tutorial/database-design.md)
-* [URL定義](tutorial/url-design.md)
-
+* サンプルアプリの設計をしよう
+    * [テーブル定義](tutorial/database-design.md)
+    * [URL定義](tutorial/url-design.md)
 * [FlywayでDBマイグレーション](tutorial/install-sts.md)
 * [MyBatis](tutorial/install-sts.md)
     * [XMLでのクエリマッピング](tutorial/install-sts.md)
