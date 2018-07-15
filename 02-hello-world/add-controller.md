@@ -1,5 +1,10 @@
 # コントローラー
 
+## パッケージの追加
+
+
+## コントローラークラス
+
 ```java
 package com.example.search.controllers;
 
@@ -16,3 +21,5 @@ public class HelloController {
 
 }
 ```
+
+```Ctrl + Shift + O```
