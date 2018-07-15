@@ -18,7 +18,7 @@
 
 ## チュートリアル
 
-## サンプルアプリの設計をしよう
+### サンプルアプリの設計をしよう
 
 * [テーブル定義](tutorial/database-design.md)
 * [URL定義](tutorial/url-design.md)
