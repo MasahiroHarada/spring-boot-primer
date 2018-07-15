@@ -6,20 +6,24 @@ TODO
 
 ## EditorConfig
 
-プロジェクトのルートディレクトリ（```build.gradle```）
+プロジェクトのルートディレクトリ（```build.gradle``` などが入っている）に、```.editorconfig``` というファイルを作成し、下記の内容を記述してください。
 
 ```ini
+# プロジェクト内で最も上位のEditorConfig設定ファイル
 root = true
 
 [*]
+# 改行文字はLFに統一する
 end_of_line = lf
+# 文字コードはUTF-8
 charset = utf-8
-trim_trailing_whitespace = true
 
+# Javaファイルはスペース4つでインデント
 [*.java]
 indent_style = space
 indent_size = 4
 
+# HTML, CSS, JSファイルはスペース2つでインデント
 [*.{html, css, js}]
 indent_style = space
 indent_size = 2
@@ -35,4 +39,4 @@ TODO
 
 ## SQL ファイルの紐付け
 
-
+TODO
