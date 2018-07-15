@@ -4,34 +4,34 @@
 
 ## 開発環境の設定
 
-* [STS（Spring Tool Suite）](settings/install-sts.md)
-* [Eclipseプラグイン](settings/eclipse-plugins.md)
-* [データベースクライアント](settings/database-client.md)
+* [STS（Spring Tool Suite）](01-settings/install-sts.md)
+* [Eclipseプラグイン](01-settings/eclipse-plugins.md)
+* [データベースクライアント](01-settings/database-client.md)
 
 ## Hello world!
 
-* [WAFの仕組み](hello-world/web-application-framework.md)
-* [設定ファイル](hello-world/application.properties.md)
-* [コントローラー](hello-world/add-controller.md)
-* [テンプレート](hello-world/add-template.md)
-* [アプリを起動する](hello-world/run-application.md)
+* [WAFの仕組み](02-hello-world/web-application-framework.md)
+* [設定ファイル](02-hello-world/application.properties.md)
+* [コントローラー](02-hello-world/add-controller.md)
+* [テンプレート](02-hello-world/add-template.md)
+* [アプリを起動する](02-hello-world/run-application.md)
 
 ## チュートリアル
 
-* [サンプルアプリについて](tutorial/sample-application.md)
-* [テーブル定義](tutorial/database-design.md)
-* [URL設計](tutorial/url-design.md)
-* [FlywayでDBマイグレーション](tutorial/flyway.md)
-* [MyBatis](tutorial/mybatis.md)
-* [モデルクラス](tutorial/models.md)
-* [XMLでのクエリマッピング](tutorial/xml-query-mapping.md)
-* [Mapperインターフェース](tutorial/mapper-interface.md)
-* [Thymeleaf](tutorial/thymeleaf.md)
-* [検索機能を実装しよう](tutorial/search-functionality.md)
-* [メンバー追加機能を実装してみよう](tutorial/add-member-functionality.md)
+* [サンプルアプリについて](03-tutorial/sample-application.md)
+* [テーブル定義](03-tutorial/database-design.md)
+* [URL設計](03-tutorial/url-design.md)
+* [FlywayでDBマイグレーション](03-tutorial/flyway.md)
+* [MyBatis](03-tutorial/mybatis.md)
+* [モデルクラス](03-tutorial/models.md)
+* [XMLでのクエリマッピング](03-tutorial/xml-query-mapping.md)
+* [Mapperインターフェース](03-tutorial/mapper-interface.md)
+* [Thymeleaf](03-tutorial/thymeleaf.md)
+* [検索機能を実装しよう](03-tutorial/search-functionality.md)
+* [メンバー追加機能を実装してみよう](03-tutorial/add-member-functionality.md)
 
 ## 演習問題
 
-* [サンプルアプリについて](practice/sample-application.md)
-* [進めかた](practice/how-to-solve.md)
+* [サンプルアプリについて](04-practice/sample-application.md)
+* [進めかた](04-practice/how-to-solve.md)
 
