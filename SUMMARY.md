@@ -26,6 +26,8 @@
 * [XMLでのクエリマッピング](tutorial/install-sts.md)
 * [Mapperインターフェース](tutorial/install-sts.md)
 * [Thymeleaf](tutorial/install-sts.md)
+* [TODO](tutorial/install-sts.md)
+* [TODO](tutorial/install-sts.md)
 * [メンバー追加画面を作成してみよう](tutorial/)
 
 ## 演習問題
