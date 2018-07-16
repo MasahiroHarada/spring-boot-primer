@@ -1,5 +1,40 @@
 # 検索機能を実装しよう
 
+このページでは
+
+## Mapper
+
+### MemberMapper.java
+
+```findByNameLike``` メソッドを追加します。
+
+```java
+@Mapper
+public interface MemberMapper {
+    List<Member> all();
+    List<Member> findByNameLike(String words);
+}
+```
+
+members テーブルの name 列に対して引数の文字列で LIKE 検索を発行するメソッドです。
+
+### MemberMapper.xml
+
+XML には ```findByNameLike``` メソッドに対応する SQL を定義します。
+
+```xml
+<mapper namespace="com.example.search.mappers.MemberMapper">
+    <!-- 中略 -->
+    <select id="findByNameLike" resultMap="memberResultMap" parameterType="String">
+        SELECT * FROM members WHERE name LIKE '%' || #{words} || '%'
+    </select>
+</mapper>
+```
+
+```all``` メソッドと異なるのは、```findByNameLike``` メソッドが引数を取ることです。
+
+## Controller
+
 ## JavaScript ファイル
 
 ```js
