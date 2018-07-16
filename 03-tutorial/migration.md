@@ -85,4 +85,4 @@ SELECT * FROM flyway_schema_history;
 
 すべてカラムの解説はしませんが、```installed_rank``` や ```script```、```installed_on``` といったカラムから「いつどのような SQL をどの順番で実行したか」を管理している様子がうかがえるのではないでしょうか。
 
-
+このページでは DB マイグレーションについて紹介しました。
