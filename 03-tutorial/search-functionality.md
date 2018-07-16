@@ -89,7 +89,7 @@ public class MemberApiController {
 }
 ```
 
-### URL のパス部分の値を取得する
+### ポイント1：URL のパス部分の値を取得する
 
 ```/api/members/あいう``` のような URL にリクエストが来る想定ですので、この「あいう」の部分の文字列を取得する必要があります。
 
@@ -97,7 +97,7 @@ public class MemberApiController {
 
 次に、メソッドの引数に ```@PathVariable``` アノテーションを付与します。
 
-### JSON レスポンスを返却する
+### ポイント2：JSON レスポンスを返却する
 
 TODO
 
