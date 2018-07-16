@@ -71,14 +71,21 @@ Hello world! の例ではただシンプルな画面を返すだけでしたが�
 List<Member> members = memberMapper.all();
 ```
 
-このデータを
+メンバー一覧の HTML を生成するためにこのデータをテンプレートに渡すには、まず ```org.springframework.ui.Model``` 型のインスタンスを ```index``` メソッドで受け取ります。
 
 ```java
 public String index(Model model) {
 ```
 
-そして、
+誰が ```model``` を渡すの？？と思うかもしれませんが、こういう風に書けばフレームワークが自動的に渡してくれるのです。
+
+```org.springframework.ui.Model``` 型は、テンプレートへの渡すデータの管理を担当しています。```addAttribute``` メソッドを呼んでデータを登録します。
 
 ```java
 model.addAttribute("members", members);
 ```
+
+これで、```index.html``` テンプレートで ```members``` という名前でメンバーの一覧データを参照できるようになりました。
+
+次のページではテンプレートを記述します。
+
