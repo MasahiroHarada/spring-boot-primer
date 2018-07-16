@@ -1,5 +1,7 @@
 # Thymeleaf
 
+## テンプレートファイル
+
 ```html
 <!doctype html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
@@ -47,6 +49,8 @@
 </body>
 </html>
 ```
+
+## JavaScript ファイル
 
 ```js
 // 検索フォームの値が変わるたびに呼ばれる関数
