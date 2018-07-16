@@ -86,13 +86,23 @@ Thymeleaf では制御構文や変数の展開を HTML の属性として表現�
 </ul>
 ```
 
-```class``` は Bootstrap でスタイルを当てるためなので置いておいて、```th:each``` と ```th:text``` に注目してください。```th:xxx``` というのは Thymeleaf の属性です。
+```class``` は Bootstrap でスタイルを当てるためなので置いておいて、```th:each``` と ```th:text``` に注目してください。```th:xxx``` というのが Thymeleaf の属性です。
+
+#### 変数の展開
+
+```${変数名}``` で変数の展開を行います。
+
+コントローラー側で以下のようにデータを登録しましたね。
+
+```java
+model.addAttribute("members", members);
+```
+
+
 
 #### ```th:each```
 
 ループ処理を行うのが ```th:each``` です。
-
-
 
 #### ```th:text```
 
