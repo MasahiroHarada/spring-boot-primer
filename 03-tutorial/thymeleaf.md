@@ -75,6 +75,8 @@ Thymeleaf では制御構文や変数の展開を HTML の属性として表現�
 
 ### ループと変数の展開
 
+ここから本格的に Thymeleaf の機能を使っていきます。```<ul>``` の中に以下の通り ```<li>``` 要素を追加してください。
+
 ```html
 <ul id="memberList" class="list-group list-group-flush">
   <li class="list-group-item"
@@ -84,3 +86,14 @@ Thymeleaf では制御構文や変数の展開を HTML の属性として表現�
 </ul>
 ```
 
+```class``` は Bootstrap でスタイルを当てるためなので置いておいて、```th:each``` と ```th:text``` に注目してください。```th:xxx``` というのは Thymeleaf の属性です。
+
+#### ```th:each```
+
+ループ処理を行うのが ```th:each``` です。
+
+
+
+#### ```th:text```
+
+```th:text``` は要素内に文字を表示させるための属性です。
