@@ -60,7 +60,9 @@ CREATE TABLE members (
 
 データベースクライアントツールを起動して ```spring-demo``` データベースの内容を確認してみましょう。テーブルが作成されているはずです！
 
-さて、今回は ```members``` テーブルだけを作成したはずですが、もう一つテーブルが作成されていませんか？```flyway_scheme_history``` です。```flyway_scheme_history``` の中を見てみましょう。
+さて、今回は ```members``` テーブルだけを作成したはずですが、もう一つテーブルが作成されていませんか？```flyway_scheme_history``` です。実はこのテーブルが、「どのような SQL をどの順番で実行したか」を管理しています。
+
+```flyway_scheme_history``` の中を見てみましょう。
 
 ```sql
 SELECT * FROM flyway_scheme_history;
