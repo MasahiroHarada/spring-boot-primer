@@ -24,7 +24,7 @@
     * [Object-Relational マッパー](03-tutorial/orm.md)
     * [Thymeleaf](03-tutorial/thymeleaf.md)
     * [検索機能を実装しよう](03-tutorial/search-functionality.md)
-    * [メンバー追加機能を実装してみよう](03-tutorial/add-member-functionality.md)
+    * [メンバー追加機能を実装しよう](03-tutorial/add-member-functionality.md)
 
 * [演習問題](04-practice/README.md)
     * [サンプルアプリについて](04-practice/sample-application.md)
