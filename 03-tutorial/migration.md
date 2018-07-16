@@ -60,11 +60,25 @@ CREATE TABLE members (
 
 データベースクライアントツールを起動して ```spring-demo``` データベースの内容を確認してみましょう。テーブルが作成されているはずです！
 
-さて、今回は ```members``` テーブルだけを作成したはずですが、もう一つテーブルが作成されていませんか？```flyway_scheme_history``` です。実はこのテーブルが、「どのような SQL をどの順番で実行したか」を管理しています。
+さて、今回は ```members``` テーブルだけを作成したはずですが、もう一つテーブルが作成されていませんか？```flyway_schema_history``` です。実は Flyway が「どのような SQL をどの順番で実行したか」を管理するためテーブルなのです。
 
-```flyway_scheme_history``` の中を見てみましょう。
+```flyway_schema_history``` の中を見てみましょう。
 
 ```sql
-SELECT * FROM flyway_scheme_history;
+SELECT * FROM flyway_schema_history;
 ```
+
+|列|値|
+|:---:|:---:|
+|installed_rank|1|
+|version|1|
+|description|Create members|
+|type|SQL|
+|script|V1__Create_members.sql|
+|checksum|92065422|
+|installed_by|postgres|
+|installed_on|2018-07-15 18:02:17.283061|
+|execution_time|8|
+|success|true|
+
 
