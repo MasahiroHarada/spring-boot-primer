@@ -1,6 +1,8 @@
 # Hello world!
 
-この章ではまず、ブラウザの画面に「Hello world!」を表示してみます。
+この章ではブラウザの画面に「Hello world!」を表示してみます。
+
+もっともシンプルな Web アプリケーションでまずはフレームワークを使用した開発のエッセンスを感じていただければと思います。
 
 * [WAFの仕組み](02-hello-world/web-application-framework.md)
 * [プロジェクトの新規作成](02-hello-world/create-new-project.md)
