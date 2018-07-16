@@ -43,9 +43,53 @@ XML には ```findByNameLike``` メソッドに対応する SQL を定義しま�
 
 コントローラーには ```/api/members``` と ```/api/members/{words}``` にあたる処理を追加する必要があります。
 
-```java
+既存の ```MemberController``` に追記してもいいのですが、あまり長くなると読みづらいので Ajax 用の処理は別のコントローラークラスに分けることにします。
 
+```com.example.search.controllers``` に ```MemberApiController.java``` を追加してください。
+
+```java
+package com.example.search.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.example.search.domains.Member;
+import com.example.search.mappers.MemberMapper;
+
+@Controller
+public class MemberApiController {
+
+    private final MemberMapper memberMapper;
+
+    @Autowired
+    public MemberApiController(MemberMapper memberMapper) {
+        this.memberMapper = memberMapper;
+    }
+
+    @GetMapping("/api/members")
+    @ResponseBody
+    public List<Member> all() {
+        List<Member> members = memberMapper.all();
+        return members;
+    }
+
+    @GetMapping("/api/members/{words}")
+    @ResponseBody
+    public List<Member> find(@PathVariable String words) {
+        List<Member> members = memberMapper.findByNameLike(words);
+        return members;
+    }
+}
 ```
+
+### URL のパス部分の値を取得する
+
+
 
 ## JavaScript ファイル
 
