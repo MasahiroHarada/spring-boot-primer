@@ -4,7 +4,7 @@
 
 ちなみに [Bootstrap](https://getbootstrap.com/) という CSS フレームワークを使用しています。
 
-## テンプレートファイル
+## ```index.html```
 
 ```src/main/resource/templates``` の下に ```index.html``` を作成して以下の内容を記述してください。というかこれはコピーペーストでいいです。
 
