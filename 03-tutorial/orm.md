@@ -182,6 +182,10 @@ XML ファイルの内容を説明していきます。
 
 ```<select>``` の中には実行したい SQL 文（```<select>``` なので SELECT 文）を記述します。
 
+#### 参考
+
+http://www.mybatis.org/mybatis-3/ja/sqlmap-xml.html#Result_Maps
+
 
 [^1]: ディレクトリが重要なので間違わないように注意してください。つまり Mapper インターフェースのパッケージ名「com.example.search.mappers」に合わせたディレクトリ階層にするということです。このルールを守ることで自動的に XML ファイルを検出して読み込んでくれるらしいです。設定で変更することもできるようですが今回は MyBatis の詳細な設定方法までは追いません。
 
