@@ -2,6 +2,10 @@
 
 ## テンプレートファイル
 
+```src/main/resource/templates``` の下に ```index.html``` を作成して以下の内容を記述してください。
+
+（）
+
 ```html
 <!doctype html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
@@ -36,8 +40,11 @@
         <div class="card">
           <div class="card-header">Members</div>
           <ul id="memberList" class="list-group list-group-flush">
-            <li class="list-group-item" th:each="member : ${members}"
-              th:text="${member.name}"></li>
+            <li
+              class="list-group-item"
+              th:each="member : ${members}"
+              th:text="${member.name}"
+            ></li>
           </ul>
         </div>
       </div>
