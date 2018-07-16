@@ -133,3 +133,4 @@ public interface MemberMapper {
 
 XML ファイルの内容を説明していきます。
 
+まずルート要素は ```<mapper>``` です。
