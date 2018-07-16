@@ -23,7 +23,7 @@
     * [DBマイグレーション](03-tutorial/migration.md)
     * [Object-Relational マッパー](03-tutorial/orm.md)
     * [コントローラーを作成する](modify-controller.md)
-    * [Thymeleaf](03-tutorial/thymeleaf.md)
+    * [テンプレートを追加する](03-tutorial/thymeleaf.md)
     * [検索機能を実装しよう](03-tutorial/search-functionality.md)
     * [メンバー追加機能を実装しよう](03-tutorial/add-member-functionality.md)
 
