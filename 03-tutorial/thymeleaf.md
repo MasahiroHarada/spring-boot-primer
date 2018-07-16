@@ -152,3 +152,6 @@ model.addAttribute("data", greeting);
 <p>Hello</p>
 ```
 
+#### 参考
+
+そのほかにも色々属性はあります。「Thymeleaf」で検索すると使いかたなど日本語の情報も探せるので調べてみてください。
