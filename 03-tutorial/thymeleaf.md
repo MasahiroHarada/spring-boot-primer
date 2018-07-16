@@ -98,12 +98,34 @@ Thymeleaf では制御構文や変数の展開を HTML の属性として表現�
 model.addAttribute("members", members);
 ```
 
+第一引数がテンプレート側で参照できる変数名です。```members``` という名前でデータが登録されているので、```"member : ${members}"``` というように ```${変数名}``` でデータを参照できます。
 
-
-#### ```th:each```
+#### th:each
 
 ループ処理を行うのが ```th:each``` です。
 
-#### ```th:text```
+書き方は以下の通りです。
+
+```
+th:each="1個分の要素 : ${変数名}"
+```
+
+#### th:text
 
 ```th:text``` は要素内に文字を表示させるための属性です。
+
+```java
+String greeting = "Hello";
+model.addAttribute("data", greeting);
+```
+
+```html
+<p th:text="${data}"></p>
+```
+
+このとき、最終的に生成される HTML は以下の通りです。
+
+```html
+<p>Hello</p>
+```
+
