@@ -1,5 +1,7 @@
 # ドメインクラス
 
+まず ```com.example.search``` 配下に ```domains``` パッケージを新たに作成してください。そしてそこに ```Member.java``` クラスファイルを作成しましょう。
+
 ```java
 package com.example.search.domains;
 
@@ -30,3 +32,8 @@ public class Member {
     }
 }
 ```
+
+```Ctrl + Alt + S```
+
+![STS Generate code](/assets/sts-generate-code.png)
+
