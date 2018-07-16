@@ -65,8 +65,18 @@ public MemberController(MemberMapper memberMapper) {
 
 Hello world! の例ではただシンプルな画面を返すだけでしたが、今回はコントローラーで取得したデータをテンプレートに渡す必要があります。
 
-まずは
+まずは前のページで定義した ```all``` メソッドでメンバーの一覧を取得します。
 
 ```java
 List<Member> members = memberMapper.all();
+```
+
+このデータを
+
+```java
+public String index(Model model) {
+```
+
+```java
+model.addAttribute("members", members);
 ```
