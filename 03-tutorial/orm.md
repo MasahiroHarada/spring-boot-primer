@@ -10,7 +10,9 @@ TODO
 
 ## ドメインクラス
 
-まず ```com.example.search``` 配下に ```domains``` パッケージを新たに作成してください。そしてそこに ```Member.java``` クラスファイルを作成しましょう。
+まず Java 側でデータを入れる箱になるクラスを用意しましょう。このような役割を持つクラスをドメインクラスやエンティティクラス、モデルクラスなどと呼びます。
+
+```com.example.search``` 配下に ```domains``` パッケージを新たに作成してください。そしてそこに ```Member.java``` クラスファイルを作成しましょう。
 
 ```java
 package com.example.search.domains;
