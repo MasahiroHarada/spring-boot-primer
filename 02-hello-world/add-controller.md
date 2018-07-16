@@ -20,7 +20,11 @@ Package Explorer の「com.example.search」を右クリックするとメニュ
 
 ## コントローラークラス
 
-パッケージが作成できたら「」
+Package Explorer を確認してください。「com.example.search」の下に「controllers」というパッケージが作成されているはずです。
+
+次はその「controllers」を右クリックして「New」→「Class」を選択します。ダイアログが表示されますので「Name」に「HelloController」と入力して「Finish」をクリックします。
+
+```HelloController.java``` が作成されているはずですので、以下のコードを書いてください。
 
 ```java
 package com.example.search.controllers;
@@ -31,12 +35,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String index() {
-        return "index";
+        return "hello";
     }
 
 }
 ```
+
+
 
 ```Ctrl + Shift + O```
