@@ -70,10 +70,11 @@ public class Member {
 }
 ```
 
-```Ctrl + Alt + S```
+ここでまた便利なショートカットキーを紹介します。コンストラクタやゲッター・セッターを自動生成するショートカットです。```Ctrl + Alt + S``` を入力してください。以下のダイアログが表示されるでしょう。
 
-![](/assets/sts-generate-code.png)
+![STS Generate code](/assets/sts-generate-code.png)
 
+「Generate Getters and Setters...」や「Generate Constructor using Fields...」を選ぶと対象のプロパティを聞かれるので、チェックを入れて「Finish」をクリックするとコードが自動生成されます。
 
 ## MyBatis
 
