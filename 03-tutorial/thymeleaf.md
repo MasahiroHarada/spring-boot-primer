@@ -1,14 +1,16 @@
 # Thymeleaf
 
+このページでは TOP ページのテンプレートファイルを追加します。
+
+ちなみに [Bootstrap](https://getbootstrap.com/) という CSS フレームワークを使用しています。
+
 ## テンプレートファイル
 
-```src/main/resource/templates``` の下に ```index.html``` を作成して以下の内容を記述してください。
-
-（）
+```src/main/resource/templates``` の下に ```index.html``` を作成して以下の内容を記述してください。というかこれはコピーペーストでいいです。
 
 ```html
 <!doctype html>
-<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <title>Demo</title>
@@ -40,11 +42,7 @@
         <div class="card">
           <div class="card-header">Members</div>
           <ul id="memberList" class="list-group list-group-flush">
-            <li
-              class="list-group-item"
-              th:each="member : ${members}"
-              th:text="${member.name}"
-            ></li>
+            <!-- ここに一覧を表示する -->
           </ul>
         </div>
       </div>
