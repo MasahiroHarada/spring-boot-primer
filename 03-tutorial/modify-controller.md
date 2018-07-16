@@ -38,7 +38,7 @@ public class MemberController {
 }
 ```
 
-## @Autowired
+## ```@Autowired```
 
 まず最初のポイントは ```@Autowired``` アノテーションです。
 
@@ -61,4 +61,12 @@ public MemberController(MemberMapper memberMapper) {
 
 ## テンプレートへのデータの受け渡し
 
-次のポイントは、
+次のポイントは、テンプレートへのデータの受け渡しです。
+
+Hello world! の例ではただシンプルな画面を返すだけでしたが、今回はコントローラーで取得したデータをテンプレートに渡す必要があります。
+
+まずは
+
+```java
+List<Member> members = memberMapper.all();
+```
