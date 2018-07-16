@@ -68,7 +68,7 @@ CREATE TABLE members (
 SELECT * FROM flyway_schema_history;
 ```
 
-|列|値|
+|カラム|値|
 |:---:|:---:|
 |installed_rank|1|
 |version|1|
@@ -80,5 +80,7 @@ SELECT * FROM flyway_schema_history;
 |installed_on|2018-07-15 18:02:17.283061|
 |execution_time|8|
 |success|true|
+
+すべてカラムの解説はしませんが、```installed_rank``` や ```script```、```installed_on``` といったカラムから「いつどのような SQL をどの順番で実行したか」を管理している様子がうかがえるのではないでしょうか。
 
 
