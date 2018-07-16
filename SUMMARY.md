@@ -21,7 +21,7 @@
     * [テーブル定義](03-tutorial/database-design.md)
     * [URL設計](03-tutorial/url-design.md)
     * [DBマイグレーション](03-tutorial/migration.md)
-    * [Object-Relational マッパー](03-tutorial/mybatis.md)
+    * [Object-Relational マッパー](03-tutorial/orm.md)
     * [モデルクラス](03-tutorial/models.md)
     * [XMLでのクエリマッピング](03-tutorial/xml-query-mapping.md)
     * [Mapperインターフェース](03-tutorial/mapper-interface.md)
