@@ -22,7 +22,7 @@
     * [URL設計](03-tutorial/url-design.md)
     * [DBマイグレーション](03-tutorial/migration.md)
     * [Object-Relational マッパー](03-tutorial/orm.md)
-    * [モデルクラス](03-tutorial/models.md)
+    * [ドメインクラス](03-tutorial/domain-class.md)
     * [XMLでのクエリマッピング](03-tutorial/xml-query-mapping.md)
     * [Mapperインターフェース](03-tutorial/mapper-interface.md)
     * [Thymeleaf](03-tutorial/thymeleaf.md)
