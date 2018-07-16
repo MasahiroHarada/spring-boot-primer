@@ -50,7 +50,13 @@ public class MemberController {
 }
 ```
 
+### showCreateForm メソッド
+
+### create メソッド
+
 ## Domain
+
+```com.example.search.domains.Member.java``` にコンストラクタを追加します。
 
 ```java
 public Member(String name) {
