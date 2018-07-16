@@ -16,6 +16,23 @@ DB マイグレーションとは、テーブル定義を管理する仕組み�
 
 DB マイグレーションを実現するためのライブラリはいくつかあるようですが、今回はその中で **Flyway** というライブラリを使用します。
 
+### 設定
+
+#### application.properties
+
+最後の行の ```spring.flyway.enabled``` に ```true``` を指定します。
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/spring-demo
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.datasource.driverClassName=org.postgresql.Driver
+
+spring.flyway.enabled=true
+```
+
+#### SQL
+
 ```src/main/resources``` の下に ```db/migration``` というディレクトリを作成してください。そしてそのなかに ```V1__Create_members.sql``` というファイルを作成してください。Flyway の仕様としてこのファイル名が重要な意味を持つので注意しましょう。
 
 ```
@@ -33,4 +50,10 @@ CREATE TABLE members (
 );
 ```
 
-TODO
+### 実行
+
+たいていの DB マイグレーションツールは管理下にある SQL を適切な順番で実行するためのコマンドを持っています。Flyway もコマンドラインからマイグレーションを実行することが可能ですが、今回のように Spring と連携させて使うとさらに便利で、青瓜ケーションの起動と同時にマイグレーションを実行してくれます。
+
+というわけで、前章の Hello world からアプリケーションを実行中だった場合は一度停止（画面上の赤い四角をクリックしましょう）し、再度起動してください。
+
+
