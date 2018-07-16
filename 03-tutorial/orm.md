@@ -6,9 +6,30 @@
 
 ## Object-Relational マッピングとは
 
-Object-Relational マッピング（ORM）とは、
+Object-Relational マッピング（ORM）とは、アプリケーションからデータベースの操作をしやすくするためのプログラミング手法です。
 
 オブジェクト指向モデルであるアプリケーション（例：Java）とリレーショナルデータベース（例：PostgreSQL）では、そもそもデータの持ち方が違います。
+
+オブジェクト指向では、クラスがあってプロパティにデータを持ちます。例えば以下のように。
+
+```java
+public class User {
+    private String email;
+    private String password;
+    // 中略
+}
+```
+
+一方リレーショナルモデルでは行と列、つまりテーブルでデータを持ちます。
+
+```
+users テーブル
+| email           | password |
+|-----------------|----------|
+| sample@mail.com | test1234 |
+```
+
+
 
 ## ドメインクラス
 
