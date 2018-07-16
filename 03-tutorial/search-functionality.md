@@ -140,10 +140,14 @@ wordsInput.addEventListener('input', search, false);
 }
 ```
 
+処理の内容をコメントに記載しました。
+
 ## テンプレートファイル
 
-```index.html``` に
+```index.html``` に ```app.js``` の読み込みを追記してください。
 
 ```html
-
+  <script src="/app.js"></script>
+</body>
+</html>
 ```
