@@ -1,6 +1,8 @@
-# DBマイグレーション
+# DB マイグレーション
 
-## DBマイグレーションとは
+## DB マイグレーションとは
+
+DB マイグレーションとは、
 
 ## Flyway
 
@@ -22,3 +24,5 @@ CREATE TABLE members (
     name VARCHAR(100) NOT NULL
 );
 ```
+
+TODO
