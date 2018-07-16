@@ -109,7 +109,11 @@ public interface MemberMapper {
 
 ### XMLでのクエリマッピング
 
-```src/main/resources``` の下にさらに ```com/example/search/mappers``` というディレクトリを作成します。その中に ```MemberMapper.xml``` というファイルを作成し、以下の内容を記述してください。
+```src/main/resources``` の下にさらに ```com/example/search/mappers``` というディレクトリを作成します。
+
+ディレクトリが重要なので間違わないように注意してください。つまり Mapper インターフェースのパッケージ名「com.example.search.mappers」に合わせたディレクトリ階層にするということです。このルールを守ることで自動的に XML ファイルを検出して読み込んでくれるらしいです。設定で変更することもできるようですが今回は MyBatis の詳細な設定方法までは追いません。
+
+ディレクトリができたらその中に ```MemberMapper.xml``` というファイルを作成し、以下の内容を記述してください。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -126,3 +130,6 @@ public interface MemberMapper {
     </select>
 </mapper>
 ```
+
+XML ファイルの内容を説明していきます。
+
