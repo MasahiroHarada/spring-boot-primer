@@ -8,6 +8,8 @@
 
 ### MemberMapper.java
 
+```add``` メソッドを追加します。
+
 ```java
 @Mapper
 public interface MemberMapper {
@@ -17,7 +19,11 @@ public interface MemberMapper {
 }
 ```
 
+INSERT 文はクエリ結果を返さないので、戻り値型は ```void``` にしています。
+
 ### MemberMapper.xml
+
+続いて、```add``` メソッドに対応する SQL を定義します。
 
 ```xml
 <mapper namespace="com.example.search.mappers.MemberMapper">
@@ -27,6 +33,12 @@ public interface MemberMapper {
     </insert>
 </mapper>
 ```
+
+今回は ```<select>``` の代わりに ```<insert>``` を使用します。
+
+また ```parameterType``` は基本型ではなく ```Member``` 型ですので、```com``` から始まるパッケージ名で指定する必要があります。
+
+もう一点
 
 ## Controller
 
@@ -46,7 +58,7 @@ public class MemberController {
     }
 
     @PostMapping("/create")
-    public String create(@RequestParam("name") String name) {
+    public String create(@RequestParam("member_name") String name) {
         Member member = new Member(name);
         memberMapper.add(member);
         return "redirect:/";
@@ -58,17 +70,33 @@ public class MemberController {
 
 ### create メソッド
 
+#### POST データを受け取る
+
+#### リダイレクト
+
 ## Domain
 
-```com.example.search.domains.Member.java``` にコンストラクタを追加します。
+コントローラーに ```new Member(name)``` と記述しましたが、```Member.java``` には ```name``` だけを受け取るコンストラクタがありませんので、追加しましょう。
 
 ```java
-public Member(String name) {
-    this.name = name;
+package com.example.search.domains;
+
+public class Member {
+  // 中略（変更なし）
+
+  public Member(String name) {
+      this.name = name;
+  }
+
+  // 中略（変更なし）
 }
 ```
 
 ## Template
+
+```src/main/template``` に ```create.html``` を追加します。
+
+このテンプレートは Thymeleaf の機能は使っていませんね。
 
 ```html
 <!doctype html>
@@ -94,8 +122,8 @@ public Member(String name) {
           <div class="card-body">
             <form action="/create" method="post">
               <div class="form-group">
-                <label for="name">名前</label>
-                <input type="text" class="form-control" id="name" name="name" required />
+                <label for="member_name">名前</label>
+                <input type="text" class="form-control" id="member_name" name="member_name" required />
               </div>
               <div class="text-right">
                 <button class="btn btn-primary" type="submit">追加する</button>
