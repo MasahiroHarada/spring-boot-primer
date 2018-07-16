@@ -141,7 +141,7 @@ MyBatis では「アプリ側のデータとテーブル側のデータの紐づ
 <mapper namespace="com.example.search.mappers.MemberMapper">
     <!-- 結果と結果を受け取るクラスの紐づけ -->
     <resultMap id="memberResultMap" type="com.example.search.domains.Member">
-      <id property="id" column="id" />
+      <result property="id" column="id" />
       <result property="name" column="name"/>
     </resultMap>
     <!-- SQL -->
@@ -153,12 +153,28 @@ MyBatis では「アプリ側のデータとテーブル側のデータの紐づ
 
 XML ファイルの内容を説明していきます。
 
+#### ```<mapper>```
+
 まずルート要素は ```<mapper>``` です。```namespace``` 属性に対応するインターフェースの名前空間を記述しましょう。
 
 ```<mapper>``` の子要素が2つありますね。```<resultMap>``` と ```<select>``` です。
 
-```<resultMap>``` は「テーブル側のどのカラムとアプリ側のどのプロパティが紐づくか」を定義します。
+#### ```<resultMap>```
+
+```<resultMap>``` は「クエリ結果のどのカラムとクラスのどのプロパティが紐づくか」を定義します。
+
+* ```id``` 属性は後で他の要素から参照するときに使用する ID です。
+* ```type``` 属性はアプリ側のデータの入れ物クラス＝ドメインクラスの型名です。```com``` からの完全修飾名でなくてはいけませんので注意してください。
+
+```<resultMap>``` の中には ```<result>``` が並びます。```property``` と ```column``` という2つの属性を持っています。
+
+* ```property``` 属性にはクラスのプロパティ名を記述します。
+* ```column``` 属性にはクエリ結果のカラム名を記述します。
+
+#### ```<select>```
 
 ```<select>``` は「Mapper のメソッドと SQL の紐づき」を定義します。
+
+余談ですが、XML ファイルでマッピングを定義するのは ORM ライブラリの中でも珍しいのではと思います。ただ社内の割と大規模な受託プロジェクトで採用していると聞いたので取り上げました。
 
 [^1]: ディレクトリが重要なので間違わないように注意してください。つまり Mapper インターフェースのパッケージ名「com.example.search.mappers」に合わせたディレクトリ階層にするということです。このルールを守ることで自動的に XML ファイルを検出して読み込んでくれるらしいです。設定で変更することもできるようですが今回は MyBatis の詳細な設定方法までは追いません。
