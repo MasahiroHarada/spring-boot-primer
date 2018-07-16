@@ -151,3 +151,9 @@ wordsInput.addEventListener('input', search, false);
 </body>
 </html>
 ```
+
+## アプリケーションを再起動する
+
+アプリケーションを再起動して機能を確かめてみましょう。
+
+
