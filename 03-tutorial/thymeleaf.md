@@ -110,6 +110,29 @@ model.addAttribute("members", members);
 th:each="1個分の要素 : ${変数名}"
 ```
 
+例：
+
+```java
+String[] numbers = {"one", "two", "three"};
+model.addAttribute("data", numbers);
+```
+
+```html
+<p th:each="item : ${data}">
+  <span th:text="item"></span>
+</p>
+```
+
+このとき、最終的に生成される HTML は以下の通りです。
+
+```html
+<p>
+  <span>one</span>
+  <span>two</span>
+  <span>three</span>
+</p>
+```
+
 #### th:text
 
 ```th:text``` は要素内に文字を表示させるための属性です。
