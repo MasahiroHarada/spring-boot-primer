@@ -80,11 +80,29 @@ public class MemberController {
 
 メソッドの引数に ```@RequestParam``` アノテーションを付与します。アノテーションの引数（```"member_name"```）は POST で送信されるデータのキーです。HTML 的にいうと input 要素の name 属性です。
 
-```@RequestParam``` アノテーションを付与
+```html
+<input name="member_name" />
+```
+
+で送られてきたデータが、
+
+```java
+public String create(@RequestParam("member_name") String memberName) {
+```
+
+という記述で ```memberName``` に格納されて渡されるということです。
 
 #### ポイント2：リダイレクト
 
+メンバーの追加処理が終わったら、TOP ページにリダイレクト[^1]します。
 
+リダイレクトの場合の返却値は、下記の形式の文字列です。
+
+```
+redirect:{リダイレクト先のパス}
+```
+
+[^1]: リダイレクトという言葉が分からない方は、大切な用語ですので調べてみましょう。
 
 ## Domain
 
