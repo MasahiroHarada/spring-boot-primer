@@ -48,6 +48,8 @@ public class Member {
 
 ## MyBatis
 
+ORM ライブラリも言語やフレームワークによって様々存在します。Java の世界でもいくつか選択肢がありますが、今回は **MyBatis** というライブラリを使用します。
+
 ### Mapper インターフェース
 
 ```java
