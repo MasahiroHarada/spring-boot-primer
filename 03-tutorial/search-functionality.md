@@ -93,6 +93,8 @@ public class MemberApiController {
 
 ## JavaScript ファイル
 
+```src/main/resource/static``` に　```app.js``` を追加してください。
+
 ```js
 // 検索フォームの値が変わるたびに呼ばれる関数
 function search(event) {
@@ -136,4 +138,12 @@ const wordsInput = document.getElementById('words');
 // inputイベントに上で定義したsearch関数を登録する
 wordsInput.addEventListener('input', search, false);
 }
+```
+
+## テンプレートファイル
+
+```index.html``` に
+
+```html
+
 ```
