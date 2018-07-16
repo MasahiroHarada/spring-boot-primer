@@ -58,8 +58,8 @@ public class MemberController {
     }
 
     @PostMapping("/create")
-    public String create(@RequestParam("member_name") String name) {
-        Member member = new Member(name);
+    public String create(@RequestParam("member_name") String memberName) {
+        Member member = new Member(memberName);
         memberMapper.add(member);
         return "redirect:/";
     }
@@ -78,7 +78,9 @@ public class MemberController {
 
 #### ポイント1：POST データを受け取る
 
+メソッドの引数に ```@RequestParam``` アノテーションを付与します。アノテーションの引数（```"member_name"```）は POST で送信されるデータのキーです。HTML 的にいうと input 要素の name 属性です。
 
+```@RequestParam``` アノテーションを付与
 
 #### ポイント2：リダイレクト
 
