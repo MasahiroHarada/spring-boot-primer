@@ -55,11 +55,15 @@
 
 ## Thymeleaf
 
+### テンプレートエンジンとは
+
 さてここまでは普通の HTML ですが、ここからテンプレートエンジン **Thymeleaf**（タイムリーフ）を使っていきます。
 
 テンプレートとはアプリケーションがレスポンスする HTML の雛形で、制御構文や変数の展開を記述することができます。雛形が同じでもデータを変えることで別のページを作り出せる仕組みですね。
 
 テンプレートエンジンとはテンプレートを HTML に変換するライブラリです。テンプレートエンジンが変わればテンプレートの書き方も変わってきます。例えば JSP もテンプレートエンジンの一種でしょう。今回は Spring と一緒に使われることが多い Thymeleaf というライブラリを使用します。
+
+### 属性の宣言
 
 Thymeleaf を使うために、まずは ```<html>``` タグに記述を追加します。
 
@@ -67,4 +71,16 @@ Thymeleaf を使うために、まずは ```<html>``` タグに記述を追加�
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 ```
 
+Thymeleaf では制御構文や変数の展開を HTML の属性として表現します。上で追加した記述は「Thymeleaf 用の属性を使いますよ」という宣言です。
+
+### ループと変数の展開
+
+```html
+<ul id="memberList" class="list-group list-group-flush">
+  <li class="list-group-item"
+      th:each="member : ${members}"
+      th:text="${member.name}"
+  ></li>
+</ul>
+```
 
