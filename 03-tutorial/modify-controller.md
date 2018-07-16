@@ -77,6 +77,8 @@ List<Member> members = memberMapper.all();
 public String index(Model model) {
 ```
 
+そして、
+
 ```java
 model.addAttribute("members", members);
 ```
