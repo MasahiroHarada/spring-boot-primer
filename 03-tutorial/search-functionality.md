@@ -1,8 +1,10 @@
 # 検索機能を実装しよう
 
-このページでは
+このページでは検索機能を追加していきます。
 
 ## Mapper
+
+まずはマッパーの設定を追加します。
 
 ### MemberMapper.java
 
@@ -89,7 +91,15 @@ public class MemberApiController {
 
 ### URL のパス部分の値を取得する
 
+```/api/members/あいう``` のような URL にリクエストが来る想定ですので、この「あいう」の部分の文字列を取得する必要があります。
 
+まず、```@GetMapping``` の引数の記述を ```/api/members/{words}``` というように、取得したい部分を ```{}``` で囲みます。
+
+次に、メソッドの引数に ```@PathVariable``` アノテーションを付与します。
+
+### JSON レスポンスを返却する
+
+TODO
 
 ## JavaScript ファイル
 
