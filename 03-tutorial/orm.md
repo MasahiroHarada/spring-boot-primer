@@ -107,7 +107,9 @@ public interface MemberMapper {
 
 また新しいアノテーションが登場しましたね。「@Mapper」アノテーションは
 
-### XMLでのクエリマッピング
+### XMLでのマッピング
+
+MyBatis では「アプリ側のデータとテーブル側のデータの紐づけを定義」を XML ファイルで行います。
 
 ```src/main/resources``` の下にさらに ```com/example/search/mappers``` というディレクトリを作成します。
 
