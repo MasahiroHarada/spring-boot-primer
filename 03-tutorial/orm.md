@@ -2,6 +2,8 @@
 
 前のページでアプリケーションで使うテーブルが揃いました。
 
+このページではそのテーブルに
+
 ## Object-Relational マッパーとは
 
 
@@ -52,6 +54,10 @@ ORM ライブラリも言語やフレームワークによって様々存在し�
 
 ### Mapper インターフェース
 
+```com.example.search``` 配下に ```mappers``` パッケージを新たに作成してください。そしてそこに ```MemberMapper.java``` インターフェースファイルを作成しましょう。
+
+クラスではなくインターフェースなので注意してください。
+
 ```java
 package com.example.search.mappers;
 
@@ -67,7 +73,11 @@ public interface MemberMapper {
 }
 ```
 
+また新しいアノテーションが登場しましたね。「@Mapper」アノテーションは
+
 ### XMLでのクエリマッピング
+
+```src/main/resources``` の下にさらに ```com/example/search/mappers``` というディレクトリを作成します。その中に ```MemberMapper.xml``` というファイルを作成し、以下の内容を記述してください。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
