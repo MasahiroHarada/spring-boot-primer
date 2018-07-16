@@ -119,7 +119,7 @@ public interface MemberMapper {
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.search.mappers.MemberMapper">
-    <!-- 結果と結果を受け取るクラスの -->
+    <!-- 結果と結果を受け取るクラスの紐づけ -->
     <resultMap id="memberResultMap" type="com.example.search.domains.Member">
       <id property="id" column="id" />
       <result property="name" column="name"/>
