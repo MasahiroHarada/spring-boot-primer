@@ -50,7 +50,15 @@ DI はかなり難しいオブジェクト指向のプログラミング手法�
 
 今回の例では、```MemberController``` のインスタンスが生成されるとき、コンストラクタに ```MemberMapper``` のインスタンスが渡されるということです。これを ```MemberController``` のプロパティである ```memberMapper``` に代入しています。
 
+```java
+@Autowired
+public MemberController(MemberMapper memberMapper) {
+    this.memberMapper = memberMapper;
+}
+```
+
 [^1]: 誤解があるといけないのですが、言語機能としてインスタンス化の方法が ```new``` 以外にあるということではありません。```new``` の実行をいわば「裏側に隠す」プログラミング手法があるということです。
 
 ## テンプレートへのデータの受け渡し
 
+次のポイントは、
