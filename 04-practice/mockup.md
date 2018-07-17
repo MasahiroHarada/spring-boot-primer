@@ -1,5 +1,9 @@
 # モックアップ
 
+この演習ではサーバサイドの開発をターゲットとしているため、フロントエンドについてはモックアップのコードを供します。コピーして使って構いません。
+
+ただし、Thymeleaf を使ってループ処理で表示するべき箇所やリンク先、form の action や method は必要に応じて追加、変更してください。
+
 ## HTML
 
 ### 一覧画面
@@ -8,12 +12,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>ToDo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="/app.css" />
 </head>
 <body>
   <header class="mb-5">
@@ -87,12 +91,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>ToDo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="/app.css" />
 </head>
 <body>
   <header class="mb-5">
