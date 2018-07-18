@@ -14,7 +14,7 @@ Package Explorer の最上位「search」を右クリックするとメニュー
 
 ![STS Run app](/assets/sts-run-app-log-2.png)
 
-赤線で囲っているように 8080 ポートで起動しているので、http://localhost:8080 にアクセスしましょう。
+赤線で囲っているように 8080 ポートで起動しているので、http://localhost:8080/hello にアクセスしましょう。
 
 ![STS Run app](/assets/sts-run-app-browser.png)
 
