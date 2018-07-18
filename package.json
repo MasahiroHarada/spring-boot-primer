@@ -1,0 +1,15 @@
+{
+  "name": "spring-boot-primer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MasahiroHarada/spring-boot-primer.git",
+  "author": "Masahiro Harada <masahiro.harada@ari-jp.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "^0.12.0"
+  }
+}
