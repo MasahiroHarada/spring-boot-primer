@@ -49,7 +49,9 @@ module.exports = {
       '/': [
         '',
         'settings/',
-        'hello-world/'
+        'hello-world/',
+        'tutorial/',
+        'practice/'
       ]
     }
   }
